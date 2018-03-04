@@ -9,11 +9,19 @@ import Actors from '../components/Actors';
 import Directors from '../components/Directors';
 import Movies from '../components/Movies';
 
+// This component should render our `Navbar` and 4 __React Router__ `Route` components with paths to __/, /movies, /directors & /actors__ and has a props of the corresponding component. When a user visits the root url, they should see the Home component
+
 
 const App = (props) => {
   return (
     <Router>
-      {/*{code here}*/}
+      <div className='navbar'>
+        <NavBar />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/movies" component={Movies} />
+        <Route exact path="/directors" component={Directors} />
+        <Route exact path="/actors" component={Actors} />
+      </div>
     </Router>
   );
 };

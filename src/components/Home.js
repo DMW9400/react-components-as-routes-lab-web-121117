@@ -1,9 +1,10 @@
 import React from 'react';
 
+// This component should render the text `Home Page`.
 const Home = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Home Page</h1>
     </div>
   );
 };
